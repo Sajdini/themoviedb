@@ -1,0 +1,7 @@
+.backgroundHolder {
+  margin-top: 50px;
+  width: 100%;
+  height: 46vh;
+  background: url("./background_img.jpg") left 20% bottom 52% / cover no-repeat
+    border-box;
+}

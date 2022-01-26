@@ -1,0 +1,103 @@
+.container {
+  margin: 0 auto;
+  min-width: 90%;
+  min-height: 90vh;
+  animation: up 800ms ease-in;
+  position: relative;
+}
+.movieInfo {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 90%;
+  height: 75vh;
+  border: beige solid thin;
+  box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+}
+.movieInfo h1 {
+  background: none;
+}
+.details {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.info {
+  width: 20%;
+  height: 58vh;
+}
+
+.info img {
+  max-width: 100%;
+  max-height: 100%;
+  border: beige solid thin;
+  box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+}
+
+.description {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 63%;
+  min-height: 58vh;
+  border-radius: 8px;
+  color: white;
+  padding: 0 1%;
+}
+.description h4 {
+  margin-top: 10px;
+}
+.description span {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.description a {
+  color: white;
+}
+
+.description a:hover {
+  color: crimson;
+}
+.briefing {
+  margin-top: 3%;
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading {
+  width: 6rem;
+  height: 6rem;
+  margin: 0 auto;
+  margin-top: 10rem;
+  border-radius: 50%;
+  border: 3px solid #ccc;
+  border-top-color: var(--clr-primary-5);
+  animation: spinner 0.6s linear infinite;
+}
+
+@keyframes up {
+  0% {
+    opacity: 0;
+    transform: translateY(35%);
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}

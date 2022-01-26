@@ -1,0 +1,36 @@
+.contactMe {
+  width: 100%;
+  background-color: black;
+  text-align: center;
+  height: 20vh;
+  z-index: 100;
+}
+
+.contact {
+  padding-top: 5%;
+  margin: 0 auto;
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact h4 {
+  margin: 0 1%;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: bold;
+  color: white;
+}
+
+.contact button {
+  background-color: black;
+  border: solid white thin;
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.contact button:hover {
+  background-color: white;
+  color: black;
+}
